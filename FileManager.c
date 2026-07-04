@@ -67,7 +67,7 @@ int UpdateFile(void){
   }
 }
 
-void DeleteFile(void){
+int DeleteFile(void){
   char filepath[1000] = {0};
   scanf("%999s", filepath);
 
