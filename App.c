@@ -43,6 +43,14 @@ void CreateTerminal(void){
             GetHistory(count, commandList);
             printf("\n");
             break;
+
+        case CLEARTERMINAL:
+            EraseAllHistory(&count, commandList);
+            break;
+
+        case CLEARTERMINALITEM:
+            EraseHistoryItem(count, commandList);
+            break;
         
         case VERSION:
             CurrentVersion();
