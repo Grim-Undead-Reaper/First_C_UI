@@ -13,6 +13,8 @@ Command commands[] = {
     {"getuser", "Get Current User.", GETUSER},
     {"clear", "Clear console.", CLEARCONSOLE},
     {"cmdh", "Get all commands used.", GETHISTORY},
+    {"killh", "Clear the command history", CLEARTERMINAL},
+    {"killhi", "Erase a specific item from command history", CLEARTERMINALITEM},
     {"fmanager", "File the files", FILEMANAGER},
     {"--version", "Get current terminal version", VERSION},
     {"exit", "Close the terminal.", EXIT}
