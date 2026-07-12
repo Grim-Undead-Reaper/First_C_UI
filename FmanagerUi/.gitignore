@@ -412,6 +412,7 @@ Makefile
 bin/
 build/
 obj/
+FmanagerUi/.gitgnore
 .clangd
 FmanagerUi.make
 raylib.make
