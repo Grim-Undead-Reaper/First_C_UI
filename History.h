@@ -6,7 +6,7 @@
 
 void AddNewCommandToHistory(int* count, char commandList[maxcharsize][maxcommandstorage], char* currentCommand);
 void GetHistory(int size, char commandList[maxcharsize][maxcommandstorage]);
-void EraseAllHistory(int* size, char commmandList[maxcharsize][maxcommandstorage]);
+void EraseAllHistory(int* size, char commandList[maxcharsize][maxcommandstorage]);
 int EraseHistoryItem(int size, char commandList[maxcharsize][maxcommandstorage]);
 
 #endif

@@ -24,7 +24,7 @@ void EraseAllHistory(int* size, char commmandList[maxcharsize][maxcommandstorage
   *size = 0;
 }
 
-int EraseHistoryItem(int size, char commmandList[maxcharsize][maxcommandstorage]){
+int EraseHistoryItem(int size, char commandList[maxcharsize][maxcommandstorage]){
   int cmdIndex = 0;
   printf("\nProvide an index to delete: ");
   scanf("%d", &cmdIndex);
@@ -34,7 +34,18 @@ int EraseHistoryItem(int size, char commmandList[maxcharsize][maxcommandstorage]
     return -1;
   }
 
-  strcpy(commmandList[cmdIndex], "");
+  strcpy(commandList[cmdIndex], "");
+  
+  int startIndex = cmdIndex + 1; 
+  int sla = 0;
+  
+  for (int i = startIndex; i < size; i++){
+    
+    sla = i;
+
+    printf("\n%s -> %s\n", commandList[sla], commandList[sla-1]);
+    //strcpy(commandList[sla-1], commandList[sla]);
+  }
 
   return 0;
 }
