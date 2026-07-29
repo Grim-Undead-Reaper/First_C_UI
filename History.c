@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include "History.h"
+#include "include/History.h"
 
 void AddNewCommandToHistory(int* count, char commandList[maxcharsize][maxcommandstorage], char* currentCommand){
     strcpy(commandList[*count], currentCommand);

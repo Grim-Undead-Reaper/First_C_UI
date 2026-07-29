@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "Commands.h"
-#include "User.h"
-#include "History.h"
-#include "FileManager.h"
+#include "include/Commands.h"
+#include "include/User.h"
+#include "include/History.h"
+#include "include/FileManager.h"
 
 void CreateTerminal(void){
     system("cls");
@@ -12,7 +12,7 @@ void CreateTerminal(void){
     char CurrentUsername[255] = {0};
     char commandList[100][255];
     
-    printf("Welcome!\n\nUse command 'help' to see all commands\n\n");
+    printf("Welcome to TIML!\n\nUse command 'help' to see all commands\n\n");
 
     while(Exit == 0){
         char CurrentInput[255];
